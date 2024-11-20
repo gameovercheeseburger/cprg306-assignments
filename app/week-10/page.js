@@ -11,7 +11,7 @@ export default function Page() {
 
   useEffect(() => {
     if (user) {
-      router.push("/week-9/shopping-list");
+      router.push("/week-10/shopping-list");
     }
   }, [user, router]);
 
@@ -23,7 +23,7 @@ export default function Page() {
         <div>
           <p>Welcome, {user.displayName} ({user.email})</p>
           <button onClick={firebaseSignOut}>Logout</button>
-          <p><a href="/week-9/shopping-list">Go to Shopping List</a></p>
+          <p><a href="/week-10/shopping-list">Go to Shopping List</a></p>
         </div>
       )}
     </div>
